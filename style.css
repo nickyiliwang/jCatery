@@ -1,0 +1,14 @@
+body {
+    margin-top: 70px;
+}
+#header {
+    height: 100vh;
+}
+.carousel-item {
+    height: 100vh;
+  }
+
+  #card-deck {
+      height: 100vh;
+      width: auto;
+  }
