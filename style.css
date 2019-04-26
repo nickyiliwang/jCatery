@@ -1,14 +1,33 @@
 body {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 #header {
-    height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .carousel-item {
-    height: 100vh;
-  }
+  height: 100vh;
+}
 
-  #card-deck {
-      height: 100vh;
-      width: auto;
-  }
+#catainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cat-img {
+  border-radius: 0.2in;
+}
+
+.alert {
+  padding: 20px;
+  margin: auto;
+  border-radius: 2em;
+}
+
+#navHR {
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  height: 15px;
+  width: 1px;
+}
