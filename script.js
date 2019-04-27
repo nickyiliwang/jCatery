@@ -23,10 +23,6 @@ var dogArr = [
   "https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1090&q=80"
 ];
 
-$("#header").css("background-color", "lightblue");
-$("#initial").css("color", "red");
-$(".navbar-brand").text("jCatry");
-
 $("img").on("click", function onClick() {
   $(this).attr("src", catArr[pickMeNewCat()]);
 });
@@ -41,4 +37,10 @@ function pickMeNewCat() {
   return Math.floor(Math.random() * 11);
 }
 
-$("#dog-group .card .card-img-top").map(x => $("#dog" + x).attr("src", dogArr[pickMeNewCat()]));
+$("#dog-group .card .card-img-top").map(x =>
+  $("#dog" + x).attr("src", dogArr[pickMeNewCat()])
+);
+
+$("#spooky-cats .card-deck .card").on("click", function() {
+  $(this).remove();
+});

@@ -12,8 +12,12 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>jquery Website</title>
+    <title>Welcome to jCatry!</title>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
@@ -23,7 +27,7 @@
 
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">jCatry</a>
       <button
         class="navbar-toggler d-lg-none"
         type="button"
@@ -77,36 +81,39 @@
       </div>
     </nav>
 
-    <div class="container-fluid" id="header">
-      <div class="alert alert-secondary">
-        <h4 class="alert-heading">Hello There, Welcome to jCatry!</h4>
-        <ul>
-          <li id="initial">You can Click on each cat to transform them!</li>
-          <li>There are tons of cute and cuddly cats for your enjoyment.</li>
-          <li>Check out the CatAQ on the navbar for more information</li>
-          <li id="last">Thanks again for visiting!</li>
-          <li>
-            <input
-              type="number"
-              placeholder="Show me #1-10 Cat!"
-              name=""
-              id="catNum"
-              max="10"
-              required
-            />
-          </li>
-        </ul>
-      </div>
-
-      <div class="container-fluid" id="catainer">
+    <div class="container" id="header">
+      <div class="row">
+        <div class="alert alert-secondary col">
+          <div id="cat-content">
+            <h3>Hello There, Welcome to jCatry!</h3>
+            <ul>
+              <li id="initial">You can Click on each cat to transform them!</li>
+              <li>
+                There are tons of cute and cuddly cats for your enjoyment.
+              </li>
+              <li>Check out the CatAQ on the navbar for more information</li>
+              <li id="last">Thanks again for visiting!</li>
+              <li>
+                <input
+                  type="number"
+                  placeholder="Show me #1-10 Cat!"
+                  name=""
+                  id="catNum"
+                  max="10"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
         <img
-          class="card-img-top"
-          src="https://images.unsplash.com/photo-1479065476818-424362c3a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+          class="card-img-top col"
+          src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
           alt=""
           id="cat-frontpage"
         />
       </div>
     </div>
+
     <br />
 
     <div class="container-fluid" id="cat-group">
@@ -118,67 +125,49 @@
             alt=""
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Cat Fact 1</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              Cats sleep 16-18 hours per day!
             </p>
           </div>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1457410129867-5999af49daf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            src="https://images.unsplash.com/photo-1542736705-53f0131d1e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
             alt=""
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Cat Fact 2</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              Cats can jump approximately seven times their height.
             </p>
           </div>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            src="https://images.unsplash.com/photo-1503844281047-cf42eade5ca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
             alt=""
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Cat fact 3</h5>
             <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              A group of kittens is called a kindle, and a group of cats is
+              called a clowder.
             </p>
           </div>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1479065476818-424362c3a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            src="https://images.unsplash.com/photo-1531853749260-4447dc77f7e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
             alt=""
           />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Cat fact 4</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              10 percent of a cat’s bones are in his tail!
             </p>
           </div>
         </div>
@@ -187,78 +176,36 @@
 
     <hr />
 
-    <div class="container-fluid" id="cat-deck">
+    <div class="container-fluid" id="spooky-cats">
+      <h1 id="spook-text">We are SpOOooooOOooOoky cats, Click to find out!</h1>
       <div class="card-deck">
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1507984211203-76701d7bb120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
-            alt="https://via.placeholder.com/150"
+            alt=""
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
         </div>
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1503844281047-cf42eade5ca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
-            alt="https://via.placeholder.com/150"
+            alt=""
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
         </div>
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
-            alt="https://via.placeholder.com/150"
+            alt=""
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            src="https://images.unsplash.com/photo-1488740304459-45c4277e7daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
             class="card-img-top"
-            alt="https://via.placeholder.com/150"
+            alt=""
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
         </div>
       </div>
     </div>
@@ -274,8 +221,7 @@
             alt=""
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Title</h5>
-            <p>Text</p>
+            <h5>Cute cat 1</h5>
           </div>
         </div>
         <div class="carousel-item ">
@@ -285,8 +231,7 @@
             alt=""
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Title</h5>
-            <p>Text</p>
+            <h5>Cute cat 2</h5>
           </div>
         </div>
         <div class="carousel-item ">
@@ -296,8 +241,7 @@
             alt=""
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Title</h5>
-            <p>Text</p>
+            <h5>Cute cat 3</h5>
           </div>
         </div>
       </div>

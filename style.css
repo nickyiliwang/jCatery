@@ -1,49 +1,66 @@
-
 body {
+  background-color: #ffe9ec;
   margin-top: 70px;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
 }
+
+#initial {
+  color: red;
+}
+
 #navHR {
   border: none;
   border-left: 1px solid hsla(200, 10%, 50%, 100);
   height: 15px;
   width: 1px;
 }
-#catainer {
+
+#cat-content {
   padding: 10px;
-  margin: 10px auto;
 }
-#header {
-  display: flex;
-  justify-content: flex-start;
-}
+
 #cat-frontpage {
-  border-radius: 0.2in;
+  padding: 10px auto;
+  margin: 10px auto;
+  border-radius: 0.5in;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .alert {
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 2em;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.5in;
 }
 
-#cat-group{
-
+.card-body {
+  background-color: #f4f4f4;
 }
-#cat-deck{
 
+#cat-group {
+}
+
+#spook-text {
+  text-align: center;
+}
+
+#cat-deck {
 }
 
 #my-carousel {
   display: flex;
-  object-fit: contain;
-  object-position: center;
+  object-fit: fill;
   height: 100vh;
 }
-.d-block{
-width: 100vp;
+.d-block {
+  width: 100vp;
 }
 
-#dog-group{
+#dog-group {
 }
-#dogtag{
-font-size: 4vw;
+#dogtag {
+  text-align: center;
+  font-size: 4vw;
 }
